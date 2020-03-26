@@ -23,7 +23,7 @@ namespace hangfire_webapi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // This method gets called by the runtime. Use this method to add services to the container. test
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHangfire(x => x.UseSqlServerStorage(@"Data Source=etr\sqlserver;Initial Catalog=hangfire-webapi-db;Integrated Security=True;Pooling=False"));
